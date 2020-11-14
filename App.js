@@ -1,6 +1,8 @@
 
 const inputText=document.querySelector('.text');
 const words=document.querySelector('#words');
+const characters=document.querySelector('#characters');
+const readingTime=document.querySelector('#reading-time');
 
 inputText.addEventListener('keyup',(e)=>{
     // console.log(e.target.value);
@@ -11,9 +13,11 @@ inputText.addEventListener('keyup',(e)=>{
 
 // function to count total words without spaces
 function countWords(text){
+    characters.innerText=text.length;
+
     text=text.split(' ');
     let wordCount=0;
-    
+
     for(let i=0;i<text.length;i++){
         if(text[i]!=' ' && isWord(text[i])){
             wordCount++;
@@ -21,6 +25,7 @@ function countWords(text){
     }
     
     words.innerText=wordCount;
+    calculateReadingTime(wordCount);
 }
 
 function isWord(text){
@@ -40,3 +45,7 @@ function isWord(text){
         return checkWord;
 }
 
+function calculateReadingTime(wordcount){
+    let Time=wordcount/200;
+    readingTime.textContent=Time.toFixed(2);
+}
