@@ -18,10 +18,11 @@ body{
     font-family:helvetica;
     padding:10px;
     border-radius:5px;
-    color:#ffffff;
-    background-color: #a18cd1;
+    color: #1d1d1d;
     margin:auto;
     margin:50px 20px 0px 20px;
+    font-style: italic;
+    text-shadow: 2px 2px #ffffff;
 }
 
 .content{
@@ -73,9 +74,10 @@ footer{
     bottom:0;
     padding:20px;
     font-size: 16px;
-    background-color:  #e6ccff;
+    background-color:#262626;
     margin-top:40px;
     text-align: center;
+    color:#ffffff;
 }
 
 
@@ -83,11 +85,14 @@ footer{
 @media screen and (max-width:600px){
 
 
-    .text{ min-width:320px;
+    .text{ min-width:300px;
         width:auto;
     }
     .count-box{
-        margin:10px;
+        margin:5px;
+    }
+    .content{
+        padding:10px;
     }
    
 }
