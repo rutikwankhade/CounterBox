@@ -18,11 +18,10 @@ body{
     font-family:helvetica;
     padding:10px;
     border-radius:5px;
-    width:250px;
     color:#ffffff;
     background-color: #a18cd1;
     margin:auto;
-    margin-top:50px;
+    margin:50px 20px 0px 20px;
 }
 
 .content{
@@ -37,7 +36,7 @@ body{
     background-color: #ffffff;
     margin:20px;
     height:80px;
-    width:150px;
+    width:120px;
     padding:10px;
     display:flex;
     flex-direction: column;
@@ -48,8 +47,11 @@ body{
 
 }
 .flex-row{
-display:flex;
-flex-direction: row;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -74,4 +76,18 @@ footer{
     background-color:  #e6ccff;
     margin-top:40px;
     text-align: center;
+}
+
+
+
+@media screen and (max-width:600px){
+
+
+    .text{ min-width:320px;
+        width:auto;
+    }
+    .count-box{
+        margin:10px;
+    }
+   
 }
