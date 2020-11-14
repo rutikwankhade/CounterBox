@@ -2,10 +2,11 @@
 padding:0;}
 
 body{
-    
-    font-family:helvetica;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    /* background-color: #b3ffb3; */
+    background-image: linear-gradient(175deg, #DFFFCD 0%, #b3ffb3 48%, #39F3BB 100%);
 
+    font-family:helvetica;
+    /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
 }
 .container{
     justify-content: center;
@@ -26,7 +27,6 @@ body{
 }
 
 .content{
-    background-color: #ffe6ff;
     padding:20px;
     margin:20px;
     border-radius:5px;
@@ -44,7 +44,7 @@ body{
     justify-content: center;
     text-align: center;
     border-radius:10px;
-    box-shadow:2px 2px 2px 1px  #ffccff;
+    border-top: solid 5px  #39F3BB;
 
 }
 .flex-row{
