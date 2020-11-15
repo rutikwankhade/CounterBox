@@ -16,20 +16,20 @@ body{
 .header{
     text-align:center;
     font-family:inter;
-    padding:40px 20px 20px 20px;
-    /* border-bottom:solid 5px #44475a; */
+    padding-top:40px;
+    padding-bottom:15px;
     color: #ffffff;
     margin:auto;
     font-style: italic;
     background-color: #6150c1;
 }
 
-.title{padding-bottom:20px;}
+.title{
+    padding-bottom:20px;
+}
 
 .content{
     padding:10px;
-    margin:0px 20px 0px 20px;
-    border-radius:5px;
 }
 
 .count-box{
