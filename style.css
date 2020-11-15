@@ -68,6 +68,7 @@ body{
     overflow-y: scroll;
     border:solid 2px #1d1d1d;
     border-radius:5px;
+    color:#44475a
 }
 
 footer{
