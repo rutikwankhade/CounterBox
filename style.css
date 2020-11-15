@@ -1,12 +1,11 @@
-*{margin:0;
-padding:0;}
+*{
+    margin:0;
+    padding:0;
+}
 
 body{
-    /* background-color: #b3ffb3; */
-    background-image: linear-gradient(175deg, #DFFFCD 0%, #b3ffb3 48%, #39F3BB 100%);
-
-    font-family:helvetica;
-    /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
+    background-color: #f2f2f2;
+    font-family:inter;
 }
 .container{
     justify-content: center;
@@ -16,21 +15,21 @@ body{
 }
 .header{
     text-align:center;
-    font-family:helvetica;
-    padding:10px;
-    border-radius:5px;
-    color: #1d1d1d;
+    font-family:inter;
+    padding:40px 20px 20px 20px;
+    /* border-bottom:solid 5px #44475a; */
+    color: #ffffff;
     margin:auto;
-    margin:50px 20px 0px 20px;
     font-style: italic;
-    text-shadow: 2px 2px #ffffff;
+    background-color: #6150c1;
 }
 
+.title{padding-bottom:20px;}
+
 .content{
-    padding:20px;
+    padding:10px;
     margin:0px 20px 0px 20px;
     border-radius:5px;
-
 }
 
 .count-box{
@@ -44,7 +43,8 @@ body{
     justify-content: center;
     text-align: center;
     border-radius:10px;
-    border-top: solid 5px  #44475a;
+    border: solid 2px #2c2c2c;
+    border-top:solid 8px #6150c1;
 
 }
 .count-box:hover{
@@ -67,7 +67,7 @@ body{
     border-radius:5px;
     font-size:16px;  
     text-align: center;  
-    box-shadow: 4px 0px 0px #ffffff;
+    box-shadow: 2px 2px 0px #ffffff;
     margin-bottom:10px;
 
 
@@ -87,7 +87,7 @@ body{
 
 .text{
     width:700px;
-    height:300px;
+    height:250px;
     margin:auto;
     padding:20px;
     display:block;
@@ -107,9 +107,12 @@ footer{
     margin-top:40px;
     text-align: center;
     color:#ffffff;
+    font-family: segoe ui;
 }
 
-
+a{
+    color:#ffffff;
+}
 
 @media screen and (max-width:600px){
 
