@@ -28,7 +28,7 @@ body{
 
 .content{
     padding:20px;
-    margin:20px;
+    margin:0px 20px 0px 20px;
     border-radius:5px;
 
 }
@@ -47,6 +47,10 @@ body{
     border-top: solid 5px  #44475a;
 
 }
+.count-box:hover{
+    transform:scale(1.05);
+    transition-duration: 0.4s;
+}
 .flex-row{
     display:flex;
     flex-direction: row;
@@ -55,6 +59,30 @@ body{
     align-items: center;
 }
 
+.btn{
+    border:none;
+    background-color: #44475a;
+    color: #ffffff;
+    padding:5px;
+    border-radius:5px;
+    font-size:16px;  
+    text-align: center;  
+    box-shadow: 4px 0px 0px #ffffff;
+    margin-bottom:10px;
+
+
+}
+.btns{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.message{
+    margin-left:auto;
+    margin-right:auto;
+    color:#44475a;
+
+}
 
 
 .text{
@@ -84,7 +112,6 @@ footer{
 
 
 @media screen and (max-width:600px){
-
 
     .text{ min-width:300px;
         width:auto;

@@ -3,6 +3,10 @@ const inputText=document.querySelector('.text');
 const words=document.querySelector('#words');
 const characters=document.querySelector('#characters');
 const readingTime=document.querySelector('#reading-time');
+const copyBtn=document.querySelector('#copy');
+const clearBtn=document.querySelector('#clear');
+const message=document.querySelector('#message');
+
 
 inputText.addEventListener('keyup',(e)=>{
     // console.log(e.target.value);
@@ -49,3 +53,22 @@ function calculateReadingTime(wordcount){
     let Time=wordcount/200;
     readingTime.textContent=Time.toFixed(2);
 }
+
+copyBtn.addEventListener('click',()=>{
+   document.execCommand('copy',inputText.value);
+   message.innerText=" copied."
+   setTimeout(()=>{    
+    message.innerText="";
+},1000)
+});
+
+clearBtn.addEventListener('click', ()=>{
+    inputText.value=" ";
+    message.innerText="All clear !"
+
+    setTimeout(()=>{    
+        message.innerText="";
+},1000)
+
+})
+
