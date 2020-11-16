@@ -69,21 +69,37 @@ body{
     text-align: center;  
     box-shadow: 2px 2px 0px #ffffff;
     margin-bottom:10px;
-
+    
 
 }
+
 .btns{
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
+    margin-left:40px;
+    margin-right:40px;
 }
 .message{
     margin-left:auto;
     margin-right:auto;
     color:#44475a;
+    margin-bottom:10px;
 
 }
+.tweet-btn{
+    background-color: #1DA1F2;
+    padding:5px;
+    border-radius:5px;
+    text-decoration: none;
+    justify-content: center;
+    margin-bottom:10px;
+    margin-right:10px;
+    box-shadow: 2px 2px 0px #ffffff;
 
+
+}
+.hide{display:none;}
 
 .text{
     width:700px;

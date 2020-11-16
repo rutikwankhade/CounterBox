@@ -6,18 +6,24 @@ const readingTime=document.querySelector('#reading-time');
 const copyBtn=document.querySelector('#copy');
 const clearBtn=document.querySelector('#clear');
 const message=document.querySelector('#message');
+const tweetBtn=document.querySelector('#tweet');
 
 
 inputText.addEventListener('keyup',(e)=>{
     // console.log(e.target.value);
     let text=e.target.value;
     countWords(text);
+    let tweet=`https://twitter.com/intent/tweet?text=${text}`
+    tweetBtn.setAttribute('href',tweet);
 
 });
 
-// function to count total words without spaces
+// count total words without spaces
 function countWords(text){
+    //characters with spaces
     characters.innerText=text.length;
+    
+    displayMessage(text);
 
     text=text.split(' ');
     let wordCount=0;
@@ -71,4 +77,21 @@ clearBtn.addEventListener('click', ()=>{
 },1000)
 
 })
+
+function displayMessage(text){
+    if(text.length>280){
+
+        message.innerHTML="Oops ! reached max limit for tweet";
+        setTimeout(()=>{ 
+            message.innerHTML="";
+        },2000) 
+        
+        tweetBtn.classList.add('hide');
+    
+    } else{  
+            message.innerHTML="";
+            tweetBtn.classList.remove('hide');
+          }
+ 
+    }
 
