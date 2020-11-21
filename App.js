@@ -1,12 +1,13 @@
 
-const inputText=document.querySelector('.text');
-const words=document.querySelector('#words');
-const characters=document.querySelector('#characters');
-const readingTime=document.querySelector('#reading-time');
-const copyBtn=document.querySelector('#copy');
-const clearBtn=document.querySelector('#clear');
-const message=document.querySelector('#message');
-const tweetBtn=document.querySelector('#tweet');
+const $ = document.querySelector;
+const inputText = $('.text');
+const words= $('#words');
+const characters = $('#characters');
+const readingTime = $('#reading-time');
+const copyBtn = $('#copy');
+const clearBtn = $('#clear');
+const message = $('#message');
+const tweetBtn = $('#tweet');
 
 
 inputText.addEventListener('keyup',(e)=>{
@@ -60,7 +61,7 @@ function calculateReadingTime(wordcount){
     readingTime.textContent=Time.toFixed(2);
 }
 
-copyBtn.addEventListener('click',()=>{
+copyBtn.addEventListener('click', ()=>{
    document.execCommand('copy',inputText.value);
    message.innerText=" copied."
    setTimeout(()=>{    
