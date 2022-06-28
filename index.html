@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/counterbox.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-    <title>CounterBox</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="assets/counterbox.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+        <title>CounterBox</title>
+    </head>
 
-<body>
-    <div class="header">
-        <div class="title">
-            <h1>CounterBox</h1>
-            <p>because every word counts.</p>
-        </div>
-        <div class="btns">
+    <body>
+        <div class="main-container">
+
             <div>
-            <a class="tweet-btn" id="tweet"
-            href="https://twitter.com/intent/tweet?text=Hello%20world">
-          Tweet</a>
-            <button id="copy" class="btn">Copy</button>
-        </div>
-            <h4 id="message"></h4>
-            <button id="clear" class="btn">Clear</button>
-        </div>
-        <div>
-            <textarea class="text" type="text"placeholder="✍ Type or paste your text"></textarea>
-        </div>
-      </div>
-      
-    <div class="container">
-      <div class="content"> 
-        <div class="flex-row">
-            <div class="count-box">
-                <h1 id="characters">0</h1>
-                <span>Characters</span>
-            </div>
+                <div>
+                    <h1 class="title">CounterBox</h1>
+                    <p class="desc">because every word counts.</p>
+                </div>
 
-            <div class="count-box" >
-                <h1 id="words">0</h1>
-                <span> Words</span>
-            </div>
 
-            <div class="count-box">
-                <h1 id="reading-time">0</h1>
-                <span>Reading time</span>
-            </div>
+                <div class="container">
+                    <div class="content">
+                        <div class="flex-row">
+                            <div class="count-box">
+                                <h1 id="characters">0</h1>
+                                <span>Characters</span>
+                            </div>
 
-        </div>
-    </div>
-       
-    
+                            <div class="count-box">
+                                <h1 id="words">0</h1>
+                                <span>
+                                    Words</span>
+                            </div>
+
+                            <div class="count-box">
+                                <h1 id="reading-time">0</h1>
+                                <span>Reading time</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+<div class="star-btn">
+
+                <a href="https://github.com/rutikwankhade/CounterBox" target="_blank" class="btn">⭐ Star on Github</a>
 </div>
-    <Footer>
-        Made with 💖 by <a href="https://twitter.com/WankhadeRutik">Rutik Wankhade</a>
-    </Footer>
-</body>
 
-<script src="App.js"></script>
+
+            </div>
+
+
+            <div>
+                <textarea class="text-block" type="text" placeholder="✍ Type or paste your text"></textarea>
+
+                <div class="btns">
+
+                    <a class="tweet-btn btn" id="tweet" href="https://twitter.com/intent/tweet?text=Hello%20world">
+                        Tweet</a>
+                    <button id="copy" class="btn">Copy</button>
+                    <button id="clear" class="btn">Clear</button>
+
+                </div>
+
+                <h4 id="message"></h4>
+            </div>
+        </div>
+
+
+        <!-- <Footer>
+                                        Made with 💖 by <a href="https://twitter.com/WankhadeRutik">Rutik Wankhade</a>
+                                    </Footer> -->
+    </body>
+
+    <script src="App.js"></script>
 </html>

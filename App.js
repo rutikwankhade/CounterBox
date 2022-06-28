@@ -1,5 +1,5 @@
 
-const inputText=document.querySelector('.text');
+const inputText=document.querySelector('.text-block');
 const words=document.querySelector('#words');
 const characters=document.querySelector('#characters');
 const readingTime=document.querySelector('#reading-time');

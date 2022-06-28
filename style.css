@@ -1,145 +1,168 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background-color: #f2f2f2;
-    font-family:inter;
+body {
+    background-color: #F0E5CF;
+    font-family: inter;
 }
-.container{
+
+.container {
+    
     justify-content: center;
     align-items: center;
-    max-width:800px;
-    margin:auto;
+    max-width: 800px;
+    margin: auto;
 }
-.header{
-    text-align:center;
-    font-family:inter;
-    padding-top:40px;
-    padding-bottom:15px;
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    font-family: inter;
+    padding-top: 40px;
+    padding-bottom: 15px;
     color: #ffffff;
-    margin:auto;
+    margin: auto;
     font-style: italic;
     background-color: #6150c1;
 }
 
-.title{
-    padding-bottom:20px;
+.title {
+    font-size: 40px;
+    font-family: helvetica;
+    text-align: center;
 }
 
-.content{
-    padding:10px;
+.desc {
+    font-size: 20px;
+    font-family: helvetica;
+    text-align: center;
 }
 
-.count-box{
+.content {
+    padding: 10px;
+}
+
+.count-box {
     background-color: #ffffff;
-    margin:20px;
-    height:80px;
-    width:120px;
-    padding:10px;
-    display:flex;
+    margin: 20px;
+    height: 80px;
+    width: 120px;
+    padding: 10px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border-radius:10px;
+    border-radius: 10px;
     border: solid 2px #2c2c2c;
-    border-top:solid 8px #6150c1;
-
+    box-shadow: #C8C6C6 6px 6px;
 }
-.count-box:hover{
-    transform:scale(1.05);
+
+.count-box:hover {
+    transform: scale(1.05);
     transition-duration: 0.4s;
 }
-.flex-row{
-    display:flex;
+
+.flex-row {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.btn{
-    border:none;
+.btn {
+    border: none;
     background-color: #44475a;
     color: #ffffff;
-    padding:5px;
-    border-radius:5px;
-    font-size:16px;  
-    text-align: center;  
-    box-shadow: 2px 2px 0px #ffffff;
-    margin-bottom:10px;
-    
-
-}
-
-.btns{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    margin-left:40px;
-    margin-right:40px;
-}
-.message{
-    margin-left:auto;
-    margin-right:auto;
-    color:#44475a;
-    margin-bottom:10px;
-
-}
-.tweet-btn{
-    background-color: #1DA1F2;
-    padding:5px;
-    border-radius:5px;
-    text-decoration: none;
-    justify-content: center;
-    margin-bottom:10px;
-    margin-right:10px;
-    box-shadow: 2px 2px 0px #ffffff;
-
-
-}
-.hide{display:none;}
-
-.text{
-    width:700px;
-    height:250px;
-    margin:auto;
-    padding:20px;
-    display:block;
-    text-align: center;
-    font-size:20px;
-    overflow-y: scroll;
-    border:solid 2px #1d1d1d;
-    border-radius:5px;
-    color:#44475a
-}
-
-footer{
-    bottom:0;
-    padding:20px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
     font-size: 16px;
-    background-color:#262626;
-    margin-top:40px;
     text-align: center;
-    color:#ffffff;
+    box-shadow: 2px 2px 0px #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+        text-decoration: none;
+        margin-right:20px;
+
+}
+
+.star-btn{
+    margin:auto;
+    align-self: center;
+    text-align: center;
+}
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.message {
+    margin-left: auto;
+    margin-right: auto;
+    color: #44475a;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tweet-btn {
+    background-color: #1DA1F2;
+}
+
+
+.hide {
+    display: none;
+}
+
+.text-block {
+    width: 700px;
+    height: 450px;
+    margin: auto;
+    padding: 24px;
+    display: block;
+    font-size: 22px;
+    overflow-y: scroll;
+    border: solid 2px #1d1d1d;
+    border-radius: 5px;
+    color: #44475a;
+    font-family: helvetica;
+    box-shadow: #C8C6C6 5px 5px;
+}
+
+footer {
+    bottom: 0;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #262626;
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
     font-family: segoe ui;
 }
 
-a{
-    color:#ffffff;
+a {
+    color: #ffffff;
 }
 
-@media screen and (max-width:600px){
-
-    .text{ min-width:300px;
-        width:auto;
+@media screen and (max-width:600px) {
+    .text {
+        min-width: 300px;
+        width: auto;
     }
-    .count-box{
-        margin:5px;
+    .count-box {
+        margin: 5px;
     }
-    .content{
-        padding:10px;
+    .content {
+        padding: 10px;
     }
-   
 }
